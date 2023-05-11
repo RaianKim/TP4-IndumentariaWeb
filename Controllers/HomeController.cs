@@ -15,11 +15,22 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        ViewBag.Equipos1 = Equipos.EquiposIndumentaria;
         return View();
     }
 
-    public IActionResult Privacy()
+    public IActionResult SelectIndumentaria()
     {
+        ViewBag.Equipos = Equipos.ListaEquipos;
+        ViewBag.Remeras = Equipos.ListaRemeras;
+        ViewBag.Pantalones = Equipos.ListaPantalones;
+        ViewBag.Medias = Equipos.ListaMedias;
+        return View();
+    }
+    public IActionResult GuardarIndumentaria (int Equipo, int Media, int Pantalones, int Remera)
+    {
+        Indumentaria indumentaria = new Indumentaria(Equipos.ListaRemeras[Remera],Equipos.ListaPantalones[Pantalones],Equipos.ListaMedias[Media]);
+        Equipos.IngresarIndumentaria(Equipos.ListaEquipos[Equipo],indumentaria);
         return View();
     }
 

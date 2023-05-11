@@ -5,6 +5,50 @@
       "PackagePath": "staticwebassets\\TP4.bundle.scp.css"
     },
     {
+      "Id": "Z:\\Program2023\\TP4\\wwwroot\\Imagenes\\CamisetaAzul.png",
+      "PackagePath": "staticwebassets\\Imagenes\\CamisetaAzul.png"
+    },
+    {
+      "Id": "Z:\\Program2023\\TP4\\wwwroot\\Imagenes\\CamisetaBlanca.png",
+      "PackagePath": "staticwebassets\\Imagenes\\CamisetaBlanca.png"
+    },
+    {
+      "Id": "Z:\\Program2023\\TP4\\wwwroot\\Imagenes\\CamisetaRoja.png",
+      "PackagePath": "staticwebassets\\Imagenes\\CamisetaRoja.png"
+    },
+    {
+      "Id": "Z:\\Program2023\\TP4\\wwwroot\\Imagenes\\CamisetaVerde.png",
+      "PackagePath": "staticwebassets\\Imagenes\\CamisetaVerde.png"
+    },
+    {
+      "Id": "Z:\\Program2023\\TP4\\wwwroot\\Imagenes\\MediasAzul.png",
+      "PackagePath": "staticwebassets\\Imagenes\\MediasAzul.png"
+    },
+    {
+      "Id": "Z:\\Program2023\\TP4\\wwwroot\\Imagenes\\MediasBlanco.png",
+      "PackagePath": "staticwebassets\\Imagenes\\MediasBlanco.png"
+    },
+    {
+      "Id": "Z:\\Program2023\\TP4\\wwwroot\\Imagenes\\MediasRojas.png",
+      "PackagePath": "staticwebassets\\Imagenes\\MediasRojas.png"
+    },
+    {
+      "Id": "Z:\\Program2023\\TP4\\wwwroot\\Imagenes\\PantalonAzul.png",
+      "PackagePath": "staticwebassets\\Imagenes\\PantalonAzul.png"
+    },
+    {
+      "Id": "Z:\\Program2023\\TP4\\wwwroot\\Imagenes\\PantalonBlanco.png",
+      "PackagePath": "staticwebassets\\Imagenes\\PantalonBlanco.png"
+    },
+    {
+      "Id": "Z:\\Program2023\\TP4\\wwwroot\\Imagenes\\PantalonRojo.png",
+      "PackagePath": "staticwebassets\\Imagenes\\PantalonRojo.png"
+    },
+    {
+      "Id": "Z:\\Program2023\\TP4\\wwwroot\\Imagenes\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Imagenes\\Thumbs.db"
+    },
+    {
       "Id": "Z:\\Program2023\\TP4\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

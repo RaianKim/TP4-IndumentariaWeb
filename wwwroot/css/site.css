@@ -20,3 +20,41 @@ html {
 body {
   margin-bottom: 60px;
 }
+table {
+  border-collapse:separate;
+  margin: 0 auto;
+}
+
+td {
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid rgb(114, 106, 106);
+  border-radius: 10px; 
+  
+}
+.Camiseta
+{
+  
+  
+  margin: 25px;
+  width: 20%;
+  height: 20%;
+  
+  
+}
+.Pantalon
+{
+  
+  margin: 25px;
+  width: 20%;
+  height: 20%;
+}
+.Medias
+{
+  
+  margin: 25px;
+  width: 20%;
+  height: 20%;
+}
+

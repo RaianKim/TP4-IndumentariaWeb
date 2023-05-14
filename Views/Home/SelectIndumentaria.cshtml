@@ -1,6 +1,52 @@
 ﻿@{
-    ViewData["Title"] = "Privacy Policy";
+    ViewData["Title"] = "Seleccionar indumentaria";
 }
 <h1>@ViewData["Title"]</h1>
-<img src="" alt="wwwroot">
+
+<form action='@Url.Action("GuardarIndumentaria","Home")'>
+@foreach (string item in ViewBag.ListaEquipos)
+{  
+    @item
+}
+<input type="number" name="Equipo" min="1" max="10" required>
+<br>
+<br>
+    <table>
+  <tr>
+    <td><img class="Camiseta" src="/Imagenes/CamisetaBlanca.png" alt="Camiseta Blanca">
+    <img class="Camiseta" src="/Imagenes/CamisetaAzul.png" alt="Camiseta Azul" >
+    <img class="Camiseta" src="/Imagenes/CamisetaRoja.png" alt="Camiseta Roja"  >
+    <img class="Camiseta" src="/Imagenes/CamisetaVerde.png" alt="Camiseta Verde" ></td>
+</table>
+  </tr>
+    
+<br>
+<input type="number" name="Camiseta" min="1" max="4" required>
+<br>
+<br>
+    <table>
+  <tr>
+    <td><img class="Pantalon" src="/Imagenes/PantalonNegro.png" alt="Pantalon Negro">
+    <img class="Pantalon" src="/Imagenes/PantalonAzul.png" alt="Pantalon Azul">
+    <img class="Pantalon" src="/Imagenes/PantalonBlanco.png" alt="Pantalon Blanco">
+    <img class="Pantalon" src="/Imagenes/PantalonRojo.png" alt="Pantalon Rojo"></td>
+    </table>
+  </tr>
+<br>
+<input type="number" name="Pantalon" min="1" max="4" required>
+<br> 
+    <table>
+  <tr>
+    <td><img class="Medias" src="/Imagenes/MediasBlanco.png" alt="Medias Blancas">
+    <img class="Medias" src="/Imagenes/MediasAzul.png" alt="Medias Azules">
+    <img class="Medias" src="/Imagenes/MediasRojas.png" alt="Medias Rojas"></td>
+    </table>
+  </tr>
+<br>
+<input type="number" name="Media" min="1" max="4" required>
+<br>
+<input type="submit" value ="Seleccionar">
+<input type="reset" value ="Resetear">
+</form>
+
 

@@ -15,23 +15,28 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        ViewBag.Equipos1 = Equipos.EquiposIndumentaria;
+        ViewBag.Equipos = Equipos.EquiposIndumentaria;
         return View();
     }
 
     public IActionResult SelectIndumentaria()
     {
-        ViewBag.Equipos = Equipos.ListaEquipos;
-        ViewBag.Remeras = Equipos.ListaRemeras;
-        ViewBag.Pantalones = Equipos.ListaPantalones;
-        ViewBag.Medias = Equipos.ListaMedias;
+        ViewBag.ListaEquipos = Equipos.ListaEquipos;
+        ViewBag.ListaRemeras = Equipos.ListaRemeras;
+        ViewBag.ListaPantalones = Equipos.ListaPantalones;
+        ViewBag.ListaMedias = Equipos.ListaMedias;
         return View();
     }
-    public IActionResult GuardarIndumentaria (int Equipo, int Media, int Pantalones, int Remera)
+    public IActionResult GuardarIndumentaria (int Equipo, int Camiseta, int Pantalon, int Media)
     {
-        Indumentaria indumentaria = new Indumentaria(Equipos.ListaRemeras[Remera],Equipos.ListaPantalones[Pantalones],Equipos.ListaMedias[Media]);
-        Equipos.IngresarIndumentaria(Equipos.ListaEquipos[Equipo],indumentaria);
-        return View();
+        int aux = Equipo;
+        int aux2 = Camiseta;
+        int aux3 = Pantalon;
+        int aux4 = Media;
+        Indumentaria indumentaria = new Indumentaria(Equipos.ListaRemeras[aux2],Equipos.ListaPantalones[aux3],Equipos.ListaMedias[aux4]);
+        ViewBag.Indu = Equipos.IngresarIndumentaria(Equipos.ListaEquipos[aux],indumentaria);
+        ViewBag.Equipos = Equipos.EquiposIndumentaria;
+        return View("index");
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

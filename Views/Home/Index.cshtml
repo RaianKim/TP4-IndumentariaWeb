@@ -2,5 +2,15 @@
     ViewData["Title"] = "Home Page";
 }
 <a href='@Url.Action("SelectIndumentaria")'><input type="button" value="Seleccionar indumentaria"></input></a>
-<h1 class="display-4">Welcome</h1>
-<h2>@ViewBag.indumentaria</h2>
+<br>
+@if(ViewBag.EquiposIndumentaria.Count !=0)
+{
+    @foreach (string Equipo in Equipos.EquiposIndumentaria.Keys)
+{
+    @Equipo;
+    @Equipos.EquiposIndumentaria[Equipo].Camiseta;
+    @Equipos.EquiposIndumentaria[Equipo].Pantalon;
+    @Equipos.EquiposIndumentaria[Equipo].Medias;
+    
+}
+}

@@ -6,18 +6,17 @@
 <br>
 <a href='@Url.Action("SelectIndumentaria")'><input type="button" value="Seleccionar indumentaria"></input></a>
 <br>
-<br>
 <h2>
     @foreach (string Equipo in Equipos.EquiposIndumentaria.Keys)
 {
-    string Camiseta = Equipos.EquiposIndumentaria[Equipo].Camiseta;
-    string Pantalon = Equipos.EquiposIndumentaria[Equipo].Pantalon;
+    
     <table>
     <tr>
     <td>@Equipo
-    <img src="/Imagenes/Camiseta">
-    <img src="/Imagenes/Pantalon">
-    @Equipos.EquiposIndumentaria[Equipo].Medias</td>
+    <img class="Camiseta" src="/Imagenes/@Equipos.EquiposIndumentaria[Equipo].Camiseta">
+    <img class="Pantalon" src="/Imagenes/@Equipos.EquiposIndumentaria[Equipo].Pantalon">
+    <img class="Medias" src="/Imagenes/@Equipos.EquiposIndumentaria[Equipo].Medias">
+    </td>
     </tr>
     </table>
     <br>

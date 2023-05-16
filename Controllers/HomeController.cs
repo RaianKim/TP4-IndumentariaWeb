@@ -29,6 +29,7 @@ public class HomeController : Controller
     }
     public IActionResult GuardarIndumentaria (int Equipo, int Camiseta, int Pantalon, int Media)
     {
+        
         int aux = Equipo-1;
         if(Equipos.EquiposIndumentaria.ContainsKey(Equipos.ListaEquipos[aux]))
         {

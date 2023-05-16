@@ -35,24 +35,18 @@ td {
 }
 .Camiseta
 {
-  
-  
   margin: 25px;
   width: 20%;
   height: 20%;
-  
-  
 }
 .Pantalon
 {
-  
   margin: 25px;
   width: 20%;
   height: 20%;
 }
 .Medias
 {
-  
   margin: 25px;
   width: 20%;
   height: 20%;
@@ -61,4 +55,9 @@ td {
 .Error
 {
   color:red;
+}
+.Recibos
+{
+  width: 20%;
+  height: 20%;
 }

@@ -29,12 +29,22 @@ public class HomeController : Controller
     }
     public IActionResult GuardarIndumentaria (int Equipo, int Camiseta, int Pantalon, int Media)
     {
-        int aux = Equipo;
-        int aux2 = Camiseta;
-        int aux3 = Pantalon;
-        int aux4 = Media;
+        int aux = Equipo-1;
+        if(Equipos.EquiposIndumentaria.ContainsKey(Equipos.ListaEquipos[aux]))
+        {
+            ViewBag.Error = "*El Equipo Ya Fue Designado";
+            return View("index");
+
+        }
+        else
+        {
+            ViewBag.Error = "";
+        }
+        int aux2 = Camiseta-1;
+        int aux3 = Pantalon-1;
+        int aux4 = Media-1;
         Indumentaria indumentaria = new Indumentaria(Equipos.ListaRemeras[aux2],Equipos.ListaPantalones[aux3],Equipos.ListaMedias[aux4]);
-        ViewBag.Indu = Equipos.IngresarIndumentaria(Equipos.ListaEquipos[aux],indumentaria);
+        ViewBag.Indumentaria = Equipos.IngresarIndumentaria(Equipos.ListaEquipos[aux],indumentaria);
         ViewBag.Equipos = Equipos.EquiposIndumentaria;
         return View("index");
     }

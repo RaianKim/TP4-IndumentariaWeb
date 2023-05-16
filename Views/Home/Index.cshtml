@@ -1,16 +1,27 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<h2 class="Error">@ViewBag.Error</h2>
+<br>
+<br>
 <a href='@Url.Action("SelectIndumentaria")'><input type="button" value="Seleccionar indumentaria"></input></a>
 <br>
-@if(ViewBag.EquiposIndumentaria.Count !=0)
-{
+<br>
+<h2>
     @foreach (string Equipo in Equipos.EquiposIndumentaria.Keys)
 {
-    @Equipo;
-    @Equipos.EquiposIndumentaria[Equipo].Camiseta;
-    @Equipos.EquiposIndumentaria[Equipo].Pantalon;
-    @Equipos.EquiposIndumentaria[Equipo].Medias;
+    string Camiseta = Equipos.EquiposIndumentaria[Equipo].Camiseta;
+    string Pantalon = Equipos.EquiposIndumentaria[Equipo].Pantalon;
+    <table>
+    <tr>
+    <td>@Equipo
+    <img src="/Imagenes/Camiseta">
+    <img src="/Imagenes/Pantalon">
+    @Equipos.EquiposIndumentaria[Equipo].Medias</td>
+    </tr>
+    </table>
+    <br>
     
 }
-}
+</h2>
+
